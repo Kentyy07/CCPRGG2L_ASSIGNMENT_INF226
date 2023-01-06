@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.Scanner;
 
-public class App {
+public class Assignment1 {
     public static void main(String[] args) {
 
         // Java program to check if a student number is valid
@@ -24,24 +24,7 @@ public class App {
             System.out.println("invalid student email address");
         }
 
-        // Short method
-        match = Pattern.compile("\\w*\\@students.national-u.edu.ph").matcher(studentEm).matches();
-
-        if (match) {
-            System.out.println("valid student email address");
-        } else {
-            System.out.println("invalid student email address");
-        }
-
-        // Even shorter method
-        match = Pattern.matches("\\w*\\@students.national-u.edu.ph", studentEm);
-
-        if (match) {
-            System.out.println("valid student email address");
-        } else {
-            System.out.println("invalid student email address");
-        }
-        
+ //num   
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter student phone number: ");
         String studentPhnum = scan.nextLine();
@@ -56,5 +39,21 @@ public class App {
         } else {
             System.out.println("invalid student phone number");
         }
+//datee
+Scanner scans = new Scanner(System.in);
+System.out.print("Enter student birthday: ");
+String studentDate = scan.nextLine();
+
+Pattern patts = Pattern.compile("\\d{4}-\\d{2}-\\d{2}");
+Matcher matts = pattern.matcher(studentDate);
+
+boolean matss = matcher.matches();
+
+if (matss) {
+    System.out.println("valid student birthday");
+} else {
+    System.out.println("invalid student birthday");
+}
+
     }
 }
