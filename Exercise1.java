@@ -107,7 +107,7 @@ public class Exercise1 {
 
         // ============================================================
         System.out.println("5. Replacing Text");
-        String phonenumbers = "+639613331382, 09395186463, +639395186454, 0915456213461";
+        String phonenumbers = "+6391512345456, 0917123561234, +639190011223, 0915456213461";
 
         // Rules
         // Make all phone numbers uniform by making them all start with +63
